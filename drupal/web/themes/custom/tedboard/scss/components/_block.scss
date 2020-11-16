@@ -1,0 +1,24 @@
+#block-tedboard-local-tasks {
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 30vh;
+
+	ul{
+		li {
+
+			list-style: none;
+
+			a {
+				background: $gray;
+			    padding: 2px 5px;
+			    color: #fff;
+			}
+		}
+	}
+}
+
+#block-tedboard-page-title {
+	margin: 100px 0;
+	text-align: center;
+}

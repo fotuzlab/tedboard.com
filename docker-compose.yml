@@ -1,0 +1,28 @@
+version: '3'
+services:
+  web:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - ./drupal:/var/www:cached
+      - ./docker-utils:/var/docker-utils
+      - /etc/letsencrypt:/etc/letsencrypt
+    environment:
+      APACHE_DOCROOT_DIR: /var/www/web
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+  db:
+    image: osiolabs/drupaldevwithdocker-mysql
+    volumes:
+      - ./db-backups:/var/mysql/backups:delegated
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: "${ROOT_PASS}"
+      MYSQL_DATABASE: "${DB}"
+      MYSQL_USER: "${DB_USER}"
+      MYSQL_PASSWORD: "${PASSWD}"
+    ports:
+      - "3306:3306"

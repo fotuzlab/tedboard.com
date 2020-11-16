@@ -1,0 +1,22 @@
+uuid: b2a03ded-d7d6-445d-815e-3d7f7c607c7c
+langcode: en
+status: true
+dependencies:
+  theme:
+    - tedboard
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: tedboard_local_tasks
+theme: tedboard
+region: content
+weight: -1
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

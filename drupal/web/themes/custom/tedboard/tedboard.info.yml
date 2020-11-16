@@ -1,0 +1,17 @@
+name: Tedboard
+description: Default theme for tedboard.
+type: theme
+core_version_requirement: ^9.0
+base theme: stable
+regions:
+  header_left: 'Header Left'
+  header_center: 'Header Center'
+  header_right: 'Header Right'
+  content_left: 'Content Left'
+  content: 'Content'
+  footer_left: 'Footer Left'
+  footer_center: 'Footer Center'
+  footer_right: 'Footer Right'
+libraries:
+  - tedboard/bootstrap
+  - tedboard/custom

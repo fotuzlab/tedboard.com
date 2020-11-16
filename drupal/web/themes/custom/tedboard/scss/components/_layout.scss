@@ -1,0 +1,67 @@
+nav {
+
+	&#block-tedboard-main-menu, &#block-tedboard-footer {
+		ul {
+
+			margin: 10px 0;
+
+			li {
+				list-style: none;
+				display: inline;
+				margin: 0 5px;
+
+				a {
+					color: $gray;
+
+					&:hover {
+						text-decoration: none;
+						color: $steel-blue;
+					}
+				}
+			}
+		}
+	}
+}
+
+.blogs {
+
+	margin: 0 auto;
+
+	img {
+		max-width: 100%;
+		margin: 30px 0;
+	}
+
+	.tag {
+		display: inline-block;
+
+		a {
+			display: inherit;
+			border: 1px solid #000;
+			color: #000;
+			padding: 2px 8px;
+
+			&:hover {
+				text-decoration: none;
+				color: #fff;
+				background: #000;
+			}
+		}
+	}
+}
+
+p {
+	line-height: 2rem;
+	color: $paragraph_text;
+}
+
+h2 {
+	a {
+		color: #000;
+
+		&:hover {
+			color: $steel-blue;
+			text-decoration: none;
+		}
+	}
+}

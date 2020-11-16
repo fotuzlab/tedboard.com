@@ -1,0 +1,46 @@
+<div class="container-fluid">
+  
+  <div class="row">
+    <header role="banner" class="container-fluid header">
+        <div class="row">
+          <div class="col-lg-4 col-sm-12"> {{ page.header_left }} </div>
+          {# <div class="col-lg-1 col-sm-12"> {{ page.header_center }} </div> #}
+          <div class="col-lg-8 col-sm-12 text-align-right"> {{ page.header_right }} </div>
+        </div>
+    </header>
+  </div>
+  <div class="main-content row">
+    
+        {% if page.content_left %}
+          <div class="col-lg-1 col-sm-12 sidebar"> {{ page.content_left }} </div>
+          <div class="col-lg-11 col-sm-12 contentlist">
+            <div class="container">
+              <div class="row"> {{ page.highlighted }} </div>
+              <div class="row"> {{ page.content }} </div>
+            </div>
+          </div>
+        {% else %}
+          <div class="container">
+            <div class="col-lg-12 col-sm-12">
+                <div class="row"> {{ page.highlighted }} </div>
+                <div class="row"> {{ page.content }} </div>
+            </div>
+          </div>
+        {% endif %}
+  </div>
+  {# {% if not is_front %} #}
+     <div class="row">
+      <footer role="contentinfo" class="container-fluid footer">
+          <div class="row">
+            <div class="col-lg-5 col-sm-12"> {{ page.footer_left }} </div>
+            <div class="col-lg-3 col-sm-12 copy">
+                <p>© <a href="https://srijan.net">Srijan Technologies</a> {{ "now"|date("Y") }}</p>
+            </div>
+            <div class="col-lg-4 col-sm-12 text-align-right">
+                {% if page.footer_right %} {{ page.footer_right }} {% endif %} 
+            </div>
+          </div>
+      </footer>
+    </div>
+  {# {% endif %} #}
+</div>

@@ -1,0 +1,23 @@
+footer {
+
+	&.footer {
+		-webkit-box-shadow: 0 0px 10px -5px #000;
+	    -moz-box-shadow: 0 0px 10px -5px #000;
+	    box-shadow: 0 0px 10px -5px #000;
+
+	    .copy {
+	    	p {
+	    		margin: 5px 0;
+			    font-size: 15px;
+			    color: $gray;
+
+			    a {
+			    	color: $gray;
+			    	&:hover {
+			    		color: $steel-blue;
+			    	}
+			    }
+	    	}
+	    }
+	}
+}

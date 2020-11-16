@@ -1,0 +1,22 @@
+uuid: c1da84e3-9b70-425c-b12b-44ad6ee66cc0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tedboard
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: tedboard_content
+theme: tedboard
+region: content
+weight: 1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

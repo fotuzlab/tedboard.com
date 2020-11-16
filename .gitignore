@@ -1,32 +1,54 @@
-### NATIVE
+drupal/vendor
 
-# root
-/dev/
-/prd/
-/prod/
+# gitignore template for Drupal 8 projects
+#
+# earlier versions of Drupal are tracked in `community/PHP/`
 
-# deps
-node_modules/
+# Ignore configuration files that may contain sensitive information
+drupal/web/sites/*/settings.local.php
+drupal/web/sites/*/default.settings.php
+drupal/web/sites/*/*services*.yml
 
-### 3RD PARTY
+# Ignore paths that may contain user-generated content
+drupal/web/sites/*/files
+drupal/web/sites/*/public
+drupal/web/sites/*/private
+drupal/web/sites/*/files-public
+drupal/web/sites/*/files-private
 
-# VS Code
-.vscode/
+# Ignore paths that may contain temporary files
+drupal/web/sites/*/translations
+drupal/web/sites/*/tmp
+drupal/web/sites/*/cache
 
-# JetBrains
-.idea/
-*.iml
+# Ignore testing related files
+drupal/web/sites/simpletest
 
-# Komodo
-*.komodoproject
-
-# Gimp
-*.xcf
-
-### GENERIC
-
-*~
-*.log
-
-# Local Netlify folder
-.netlify
+# Ignore drupal core (if not versioning drupal sources)
+drupal/web/core
+drupal/web/modules/contrib
+drupal/web/themes/contrib
+drupal/web/vendor
+drupal/web/modules/README.txt
+drupal/web/profiles/README.txt
+drupal/web/themes/README.txt
+drupal/web/sites/README.txt
+drupal/web/sites/example.sites.php
+drupal/web/sites/example.settings.local.php
+drupal/web/sites/development.services.yml
+drupal/web/.csslintrc
+drupal/web/.editorconfig
+drupal/web/.eslintignore
+drupal/web/.eslintrc.json
+drupal/web/.gitattributes
+drupal/web/.ht.router.php
+drupal/web/.htaccess
+drupal/web/autoload.php
+drupal/web/example.gitignore
+drupal/web/index.php
+drupal/web/INSTALL.txt
+drupal/web/LICENSE.txt
+drupal/web/README.txt
+drupal/web/robots.txt
+drupal/web/update.php
+drupal/web/web.config

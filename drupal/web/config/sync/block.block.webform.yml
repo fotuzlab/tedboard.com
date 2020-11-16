@@ -1,0 +1,25 @@
+uuid: c91bb6bd-0442-4b91-bc23-1bb588cd59f0
+langcode: en
+status: false
+dependencies:
+  config:
+    - webform.webform.register
+  module:
+    - webform
+  theme:
+    - tedboard
+id: webform
+theme: tedboard
+region: content
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: Register
+  provider: webform
+  label_display: '0'
+  webform_id: register
+  default_data: ''
+  redirect: false
+visibility: {  }
