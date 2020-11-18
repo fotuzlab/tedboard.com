@@ -2,3 +2,13 @@
     font-size: 1.5rem;
     text-align: center;
 }
+
+.webform-submission-register-form {
+	.form-email {
+		width: 20rem;
+
+		@media only screen and (max-width: 789px) {
+			width: 100%;
+		}
+	}
+}
