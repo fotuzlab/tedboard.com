@@ -7,15 +7,17 @@
 
 	.wysiwyg-title {
 
-		@media only screen and (min-width: $md) {
-			top: 0;
-			position: absolute;
-		}
-
 		padding: 5px 10px;
 		border: 1px $bg-grey solid;
 		border-top: none;
 		background: $bg-grey;
 		color: $gray;
+		margin: 2rem 0;
+
+		@media only screen and (min-width: $md) {
+			top: 0;
+			position: absolute;
+			margin: 0;
+		}
 	}
 }

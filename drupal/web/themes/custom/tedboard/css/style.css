@@ -123,11 +123,13 @@ h2 a:hover {
   border-top: none;
   background: #f7f6f6;
   color: #808080;
+  margin: 2rem 0;
 }
 @media only screen and (min-width: 992px) {
   .paragraph .wysiwyg-title {
     top: 0;
     position: absolute;
+    margin: 0;
   }
 }
 
