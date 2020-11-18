@@ -84,7 +84,7 @@ h2 a:hover {
 .webform-submission-register-form .form-email {
   width: 20rem;
 }
-@media only screen and (max-width: 789px) {
+@media only screen and (max-width: 768px) {
   .webform-submission-register-form .form-email {
     width: 100%;
   }
@@ -111,20 +111,24 @@ h2 a:hover {
 }
 
 .paragraph {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   position: relative;
   border-top: 1px #f7f6f6 solid;
 }
 .paragraph .wysiwyg-title {
-  top: 0;
-  position: absolute;
   padding: 5px 10px;
   border: 1px #f7f6f6 solid;
   border-top: none;
   background: #f7f6f6;
   color: #808080;
+}
+@media only screen and (min-width: 992px) {
+  .paragraph .wysiwyg-title {
+    top: 0;
+    position: absolute;
+  }
 }
 
 img {

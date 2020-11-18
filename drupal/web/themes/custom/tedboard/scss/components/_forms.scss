@@ -7,7 +7,7 @@
 	.form-email {
 		width: 20rem;
 
-		@media only screen and (max-width: 789px) {
+		@media only screen and (max-width: $sm) {
 			width: 100%;
 		}
 	}
