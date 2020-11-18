@@ -3,16 +3,20 @@
 	display:flex;
 	align-items:center;
 	position: relative;
-	border-top: 1px $bg-grey solid;
+	border-top: 1px #000 solid;
+
+	&#sec1 {
+		border-top: none;
+	}
 
 	.wysiwyg-title {
 
 		padding: 5px 10px;
-		border: 1px $bg-grey solid;
+		border: 1px #000 solid;
 		border-top: none;
-		background: $bg-grey;
-		color: $gray;
-		margin: 2rem 0;
+		background: #000;
+		color: #fff;
+		margin: 0 0 2rem 0;
 
 		@media only screen and (min-width: $md) {
 			top: 0;

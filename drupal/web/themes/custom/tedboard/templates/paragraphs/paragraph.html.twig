@@ -47,7 +47,7 @@
   ]
 %}
 {% block paragraph %}
-  <div{{ attributes.addClass(classes) }} id="{{ paragraph.id() }}">
+  <div{{ attributes.addClass(classes) }} id="sec{{ paragraph.id() }}">
     <div class="container">
       {% block content %}
         {{ content }}

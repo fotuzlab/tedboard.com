@@ -115,15 +115,18 @@ h2 a:hover {
   display: flex;
   align-items: center;
   position: relative;
-  border-top: 1px #f7f6f6 solid;
+  border-top: 1px #000 solid;
+}
+.paragraph#sec1 {
+  border-top: none;
 }
 .paragraph .wysiwyg-title {
   padding: 5px 10px;
-  border: 1px #f7f6f6 solid;
+  border: 1px #000 solid;
   border-top: none;
-  background: #f7f6f6;
-  color: #808080;
-  margin: 2rem 0;
+  background: #000;
+  color: #fff;
+  margin: 0 0 2rem 0;
 }
 @media only screen and (min-width: 992px) {
   .paragraph .wysiwyg-title {
