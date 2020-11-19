@@ -11,4 +11,12 @@
 			width: 100%;
 		}
 	}
+
+	.captcha-wrap {
+	    flex-basis: 100%;
+	    text-align: -webkit-center;
+	    text-align: -ms-center;
+	    text-align: -moz-center;
+	    margin: 15px 0;
+	}
 }

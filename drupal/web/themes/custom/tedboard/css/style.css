@@ -89,6 +89,13 @@ h2 a:hover {
     width: 100%;
   }
 }
+.webform-submission-register-form .captcha-wrap {
+  flex-basis: 100%;
+  text-align: -webkit-center;
+  text-align: -ms-center;
+  text-align: -moz-center;
+  margin: 15px 0;
+}
 
 #block-tedboard-local-tasks {
   position: fixed;
