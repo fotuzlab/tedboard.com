@@ -52,3 +52,9 @@ drupal/web/README.txt
 drupal/web/robots.txt
 drupal/web/update.php
 drupal/web/web.config
+
+# Do not add cache files
+drupal/web/themes/custom/tedboard/.sass-cache/*
+
+# Do no add env file
+.env
