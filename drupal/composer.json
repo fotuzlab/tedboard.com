@@ -27,6 +27,7 @@
         "drupal/recaptcha": "^3.0",
         "drupal/token": "^1.7",
         "drupal/twig_tweak": "3.0.0-rc2",
+        "drupal/twitter_embed": "^1.0@alpha",
         "drupal/webform": "6.0.0-alpha21"
     },
     "conflict": {
@@ -90,5 +91,8 @@
                 "      composer remove drupal/core-project-message"
             ]
         }
+    },
+    "require-dev": {
+        "drush/drush": "^10.5"
     }
 }

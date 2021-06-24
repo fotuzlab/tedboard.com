@@ -1,0 +1,42 @@
+uuid: 31f2db57-d790-483a-a501-7d702fc672bd
+langcode: en
+status: true
+dependencies:
+  module:
+    - twitter_embed
+  theme:
+    - tedboard
+id: twittertimeline
+theme: tedboard
+region: content
+weight: 0
+provider: null
+plugin: twitter_embed_timeline
+settings:
+  id: twitter_embed_timeline
+  label: 'Latest Tweets'
+  provider: twitter_embed
+  label_display: visible
+  username: jhapdp
+  type: profile
+  type_value: ''
+  display_style: timeline
+  theme: light
+  chrome:
+    noheader: noheader
+    nofooter: nofooter
+    noborders: noborders
+    noscrollbar: noscrollbar
+    transparent: 0
+  width: '0'
+  height: '600'
+  link_color: '#2b7bb9'
+  border_color: '#000000'
+  tweet_limit: '3'
+  show_replies: 0
+  aria_polite: polite
+  language: ''
+  hide_username: false
+  hide_followers_count: false
+  size: null
+visibility: {  }

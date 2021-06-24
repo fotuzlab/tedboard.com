@@ -41,6 +41,7 @@ module:
   toolbar: 0
   tour: 0
   twig_tweak: 0
+  twitter_embed: 0
   update: 0
   user: 0
   views_ui: 0

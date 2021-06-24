@@ -7,7 +7,7 @@ regions:
   header_left: 'Header Left'
   header_center: 'Header Center'
   header_right: 'Header Right'
-  content_left: 'Content Left'
+  content_front: 'Content Front'
   content: 'Content'
   footer_left: 'Footer Left'
   footer_center: 'Footer Center'

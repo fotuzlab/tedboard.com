@@ -12,17 +12,25 @@ footer.footer {
   -webkit-box-shadow: 0 0px 10px -5px #000;
   -moz-box-shadow: 0 0px 10px -5px #000;
   box-shadow: 0 0px 10px -5px #000;
+  padding: 20px;
+  background: #000;
+}
+footer.footer nav#block-tedboard-footer ul li a {
+  color: #ffffff;
+}
+footer.footer nav#block-tedboard-footer ul li a:hover {
+  color: #ffffff;
 }
 footer.footer .copy p {
   margin: 5px 0;
   font-size: 15px;
-  color: #808080;
+  color: #ffffff;
 }
 footer.footer .copy p a {
-  color: #808080;
+  color: #ffffff;
 }
 footer.footer .copy p a:hover {
-  color: #5f8fc0;
+  color: #ffffff;
 }
 
 nav#block-tedboard-main-menu ul, nav#block-tedboard-footer ul {
@@ -97,6 +105,30 @@ h2 a:hover {
   margin: 15px 0;
 }
 
+.webform-submission-contact-us-form input {
+  padding: 13px;
+  border: 2px solid #8080807d;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.webform-submission-contact-us-form .webform-button--submit {
+  background-color: #416ad9;
+  border-color: #416ad9;
+  color: #fff;
+  padding: 0.7rem 3rem;
+  border: 1px solid transparent;
+  border-radius: 11px;
+  text-decoration: none;
+  text-transform: capitalize;
+  margin-top: 45px;
+  width: inherit;
+  cursor: pointer;
+}
+.webform-submission-contact-us-form .webform-button--submit:focus-visible {
+  border-color: #416ad9;
+}
+
 #block-tedboard-local-tasks {
   position: fixed;
   z-index: 1;
@@ -117,30 +149,57 @@ h2 a:hover {
   text-align: center;
 }
 
+div#block-twittertimeline {
+  background: #6C7586;
+  padding: 40px;
+  margin: 40px 0;
+}
+div#block-twittertimeline h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+}
+div#block-twittertimeline iframe {
+  width: 48% !important;
+  margin: 0 auto !important;
+  display: flex !important;
+}
+
 .paragraph {
+  min-height: 100%;
   min-height: 100vh;
   display: flex;
   align-items: center;
-  position: relative;
-  border-top: 1px #000 solid;
+  margin: 2rem 0;
 }
-.paragraph#sec1 {
-  border-top: none;
+.paragraph .title, .paragraph .description {
+  margin-bottom: 40px;
 }
-.paragraph .wysiwyg-title {
-  padding: 5px 10px;
-  border: 1px #000 solid;
-  border-top: none;
-  background: #000;
+.paragraph.content-reversed .title, .paragraph.content-reversed .description p {
+  color: white;
+}
+.paragraph .link > div {
+  display: flex;
+}
+.paragraph .link > div div {
+  padding-right: 20px;
+}
+.paragraph .link > div div a {
+  background-color: #416ad9;
+  border-color: #416ad9;
   color: #fff;
-  margin: 0 0 2rem 0;
+  padding: 0.7rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 11px;
+  text-decoration: none;
+  text-transform: capitalize;
 }
-@media only screen and (min-width: 992px) {
-  .paragraph .wysiwyg-title {
-    top: 0;
-    position: absolute;
-    margin: 0;
-  }
+.paragraph .link > div div a:hover, .paragraph .link > div div a:focus {
+  background-color: #2954cb;
+  border-color: #2750c1;
+}
+.paragraph .link > div div a:focus {
+  box-shadow: 0 0 0 0.2rem #4793e7;
 }
 
 img {

@@ -20,11 +20,9 @@
             </div>
           </div>
         {% else %}
-          <div class="container">
-            <div class="col-lg-12 col-sm-12">
-                <div class="row"> {{ page.highlighted }} </div>
-                <div class="row"> {{ page.content }} </div>
-            </div>
+          <div class="{{ is_front ? 'container-fluid' : 'container' }}">
+                <div class=""> {{ page.highlighted }} </div>
+                <div class=""> {{ page.content }} </div>
           </div>
         {% endif %}
   </div>
