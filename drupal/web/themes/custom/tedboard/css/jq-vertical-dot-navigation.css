@@ -1,0 +1,48 @@
+
+.scrollSection nav {
+  position: fixed;
+  top: 30%;
+  bottom: 30%;
+  left: 0;
+  width: 60px;
+  z-index: 2;
+}
+
+.scrollSection nav ul {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.scrollSection nav li {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .5s;
+  list-style: none;
+}
+
+.scrollSection .dot1 {
+  box-shadow: 0 0 0 3px white, 0 0 0 6px grey;
+}
+
+.scrollSection .dot2 {
+  box-shadow: 0 0 0 3px white, 0 0 0 6px grey;
+}
+
+.scrollSection .dot3 {
+  box-shadow: 0 0 0 3px white, 0 0 0 6px grey;
+}
+
+.scrollSection .dot4 {
+  box-shadow: 0 0 0 3px white, 0 0 0 6px grey;
+}
+
+.scrollSection .active {
+  box-shadow: 0 0 0 3px white, 0 0 0 5px grey;
+  background-color: #416ad9;
+}

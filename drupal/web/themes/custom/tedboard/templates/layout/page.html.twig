@@ -3,28 +3,40 @@
   <div class="row">
     <header role="banner" class="container-fluid header">
         <div class="row">
-          <div class="col-lg-4 col-sm-12"> {{ page.header_left }} </div>
+          <div class="col-lg-4 col-sm-12 pl-5"> {{ page.header_left }} </div>
           {# <div class="col-lg-1 col-sm-12"> {{ page.header_center }} </div> #}
-          <div class="col-lg-8 col-sm-12 text-align-right"> {{ page.header_right }} </div>
+          <div class="col-lg-8 col-sm-12 text-align-left"> {{ page.header_right }} </div>
         </div>
     </header>
   </div>
   <div class="main-content row">
+    {% if is_front %}
+      <div class="scrollSection">
+        <nav>
+            <ul>
+                <li class="dot1" id="ec5"></li>
+                <li class="dot2" id="ec6"></li>
+                <li class="dot3" id="ec7"></li>
+                <li class="dot4" id="ec8"></li>
+            </ul>
+        </nav>
+      </div>
+    {% endif %}
     
-        {% if page.content_left %}
-          <div class="col-lg-1 col-sm-12 sidebar"> {{ page.content_left }} </div>
-          <div class="col-lg-11 col-sm-12 contentlist">
-            <div class="container">
-              <div class="row"> {{ page.highlighted }} </div>
-              <div class="row"> {{ page.content }} </div>
-            </div>
-          </div>
-        {% else %}
-          <div class="{{ is_front ? 'container-fluid' : 'container' }}">
-                <div class=""> {{ page.highlighted }} </div>
-                <div class=""> {{ page.content }} </div>
-          </div>
-        {% endif %}
+    {% if page.content_left %}
+      <div class="col-lg-1 col-sm-12 sidebar"> {{ page.content_left }} </div>
+      <div class="col-lg-11 col-sm-12 contentlist">
+        <div class="container">
+          <div class="row"> {{ page.highlighted }} </div>
+          <div class="row"> {{ page.content }} </div>
+        </div>
+      </div>
+    {% else %}
+      <div class="{{ is_front ? 'container-fluid' : 'container' }}">
+            <div class=""> {{ page.highlighted }} </div>
+            <div class=""> {{ page.content }} </div>
+      </div>
+    {% endif %}
   </div>
   {# {% if not is_front %} #}
      <div class="row">

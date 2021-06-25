@@ -25,6 +25,7 @@
         "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",
         "drupal/recaptcha": "^3.0",
+        "drupal/social_media_links": "^2.8",
         "drupal/token": "^1.7",
         "drupal/twig_tweak": "3.0.0-rc2",
         "drupal/twitter_embed": "^1.0@alpha",

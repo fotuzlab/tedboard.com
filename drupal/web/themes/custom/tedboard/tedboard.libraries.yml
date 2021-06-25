@@ -12,6 +12,8 @@ custom:
   css:
     theme:
       css/style.css: {}
+      css/jq-vertical-dot-navigation.css: {}
       css/font-awesome.min.css: {}
   js:
     js/custom.js: {}
+    js/jq-vertical-dot-nav.js: {}

@@ -8,7 +8,7 @@ footer {
       background: $black;
 
       nav#block-tedboard-footer {
-        ul {
+        > ul {
           li {
             a {
               color: $white;
