@@ -1,0 +1,10 @@
+uuid: 2d41907c-cecd-40cd-9249-e461a8d087df
+langcode: en
+status: true
+dependencies: {  }
+id: text_and_links
+label: 'Text And Links'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -20,3 +20,31 @@
 	    margin: 15px 0;
 	}
 }
+
+.webform-submission-contact-us-form {
+  input {
+    padding: 13px;
+    border: 2px solid #8080807d;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .webform-button--submit {
+    background-color: #416ad9;
+    border-color: #416ad9;
+    color: #fff;
+    padding: 0.7rem 3rem;
+    border: 1px solid transparent;
+    border-radius: 11px;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-top: 45px;
+    width: inherit;
+    cursor: pointer;
+
+    &:focus-visible {
+      border-color: #416ad9;
+    }
+  }
+}

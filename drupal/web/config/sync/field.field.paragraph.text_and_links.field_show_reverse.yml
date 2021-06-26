@@ -1,0 +1,23 @@
+uuid: 5954b7c1-933a-4f3d-80b9-fcd28349ed4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_show_reverse
+    - paragraphs.paragraphs_type.text_and_links
+id: paragraph.text_and_links.field_show_reverse
+field_name: field_show_reverse
+entity_type: paragraph
+bundle: text_and_links
+label: 'Show Reverse'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -8,7 +8,7 @@
 
   Drupal.behaviors.tedboardCustom = {
     attach: function (context, settings) {
-      // 
+
     }
   }
 })(jQuery, Drupal, drupalSettings);

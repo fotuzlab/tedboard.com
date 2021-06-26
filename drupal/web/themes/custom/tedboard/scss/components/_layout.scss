@@ -8,10 +8,11 @@ nav {
 			li {
 				list-style: none;
 				display: inline;
-				margin: 0 5px;
+				margin: 0 14px;
 
 				a {
 					color: $gray;
+          font-size: 20px;          
 
 					&:hover {
 						text-decoration: none;

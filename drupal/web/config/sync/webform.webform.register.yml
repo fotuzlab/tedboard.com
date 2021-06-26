@@ -12,7 +12,29 @@ id: register
 title: Register
 description: ''
 category: ''
-elements: "'#attributes':\n  class:\n    - 'form-inline justify-content-center'\nemail:\n  '#type': email\n  '#title': Email\n  '#title_display': invisible\n  '#description_display': invisible\n  '#placeholder': Email\n  '#autocomplete': ''\n  '#required': true\n  '#required_error': 'Please enter a valid email'\n  '#attributes':\n    class:\n      - 'form-control mr-2 mt-2 mb-2'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Register\n  '#submit__attributes':\n    class:\n      - 'btn btn-success'"
+elements: |-
+  '#attributes':
+    class:
+      - 'form-inline justify-content-center'
+  email:
+    '#type': email
+    '#title': Email
+    '#title_display': invisible
+    '#description_display': invisible
+    '#placeholder': Email
+    '#autocomplete': ''
+    '#required': true
+    '#required_error': 'Please enter a valid email'
+    '#attributes':
+      class:
+        - 'form-control mr-2 mt-2 mb-2'
+  actions:
+    '#type': webform_actions
+    '#title': 'Submit button(s)'
+    '#submit__label': Register
+    '#submit__attributes':
+      class:
+        - 'btn btn-success'
 css: ''
 javascript: ''
 settings:
