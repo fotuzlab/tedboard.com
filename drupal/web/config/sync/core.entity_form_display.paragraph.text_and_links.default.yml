@@ -4,15 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.text_and_links.field_description
-    - field.field.paragraph.text_and_links.field_featured_image
+    - field.field.paragraph.text_and_links.field_digital_assurance_image
     - field.field.paragraph.text_and_links.field_link
     - field.field.paragraph.text_and_links.field_show_reverse
     - field.field.paragraph.text_and_links.field_title
-    - image.style.thumbnail
     - paragraphs.paragraphs_type.text_and_links
   module:
-    - image
     - link
+    - media_library
     - text
 id: paragraph.text_and_links.default
 targetEntityType: paragraph
@@ -27,13 +26,12 @@ content:
     third_party_settings: {  }
     type: text_textarea
     region: content
-  field_featured_image:
-    weight: 0
+  field_digital_assurance_image:
+    type: media_library_widget
+    weight: 5
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      media_types: {  }
     third_party_settings: {  }
-    type: image_image
     region: content
   field_link:
     weight: 3

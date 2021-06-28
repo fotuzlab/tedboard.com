@@ -1,0 +1,37 @@
+uuid: abfc5ac1-d5eb-4635-b860-7126767a45ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.image.field_media_image
+    - media.type.image
+  module:
+    - svg_formatter
+_core:
+  default_config_hash: B1a2aBHmUulUZN6HrxITEH1tSResuVjXMBEv1lUBtOo
+id: media.image.default
+targetEntityType: media
+bundle: image
+mode: default
+content:
+  field_media_image:
+    label: visually_hidden
+    settings:
+      inline: true
+      width: 100
+      height: 100
+      enable_alt: true
+      alt_string: ''
+      enable_title: true
+      title_string: ''
+      sanitize: false
+      apply_dimensions: false
+    third_party_settings: {  }
+    type: svg_formatter
+    weight: 1
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

@@ -109,7 +109,7 @@ h2 a:hover {
 
 .webform-submission-contact-us-form input {
   padding: 13px;
-  border: 2px solid #8080807d;
+  border: 2px solid #808080;
   border-radius: 7px;
   margin-bottom: 20px;
   width: 100%;
@@ -117,13 +117,13 @@ h2 a:hover {
 .webform-submission-contact-us-form .webform-button--submit {
   background-color: #416ad9;
   border-color: #416ad9;
-  color: #fff;
+  color: #ffffff;
   padding: 0.7rem 3rem;
   border: 1px solid transparent;
   border-radius: 11px;
   text-decoration: none;
   text-transform: capitalize;
-  margin-top: 45px;
+  margin-top: 24px;
   width: inherit;
   cursor: pointer;
 }
@@ -151,20 +151,10 @@ h2 a:hover {
   text-align: center;
 }
 
-div#block-twittertimeline {
-  background: #6C7586;
-  padding: 40px;
-  margin: 40px 0;
-}
+div#block-webform-2 h2,
 div#block-twittertimeline h2 {
   text-align: center;
-  color: white;
   margin-bottom: 40px;
-}
-div#block-twittertimeline iframe {
-  width: 48% !important;
-  margin: 0 auto !important;
-  display: flex !important;
 }
 
 .social-media-links--platforms li {
@@ -200,13 +190,23 @@ div#block-twittertimeline iframe {
 .paragraph .link > div {
   display: flex;
 }
+.paragraph .link > div div:nth-child(odd) a {
+  background-color: #416ad9;
+  border-color: #416ad9;
+  color: #ffffff;
+}
+.paragraph .link > div div:nth-child(even) a {
+  background-color: #ffffff;
+  border: 2px solid #416ad9;
+  color: #416ad9;
+}
+.paragraph .link > div div:nth-child(even) a:hover, .paragraph .link > div div:nth-child(even) a:focus {
+  color: #ffffff;
+}
 .paragraph .link > div div {
   padding-right: 20px;
 }
 .paragraph .link > div div a {
-  background-color: #416ad9;
-  border-color: #416ad9;
-  color: #fff;
   padding: 0.7rem 1rem;
   border: 1px solid transparent;
   border-radius: 11px;
@@ -214,7 +214,7 @@ div#block-twittertimeline iframe {
   text-transform: capitalize;
 }
 .paragraph .link > div div a:hover, .paragraph .link > div div a:focus {
-  background-color: #2954cb;
+  background-color: #2750c1;
   border-color: #2750c1;
 }
 .paragraph .link > div div a:focus {

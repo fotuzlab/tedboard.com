@@ -1,25 +1,30 @@
-uuid: 2d0003a4-a6c5-455f-abbc-c5b8123e13c7
+uuid: 5b5ec8dd-d142-4a1d-b520-a495d8693f21
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_featured_image
-    - paragraphs.paragraphs_type.text_and_links
+    - field.storage.media.field_media_image
+    - media.type.image
+  enforced:
+    module:
+      - media
   module:
     - image
-id: paragraph.text_and_links.field_featured_image
-field_name: field_featured_image
-entity_type: paragraph
-bundle: text_and_links
-label: 'Featured Image'
+_core:
+  default_config_hash: pzPA-2JwyxlJ3qMb4L9viAnhNhbEhl2couH8A3FO020
+id: media.image.field_media_image
+field_name: field_media_image
+entity_type: media
+bundle: image
+label: Image
 description: ''
-required: false
-translatable: false
+required: true
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
   file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: 'png gif jpg jpeg svg'
+  file_extensions: 'svg png gif jpg jpeg'
   max_filesize: ''
   max_resolution: ''
   min_resolution: ''

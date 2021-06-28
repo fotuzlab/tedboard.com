@@ -8,8 +8,8 @@ dependencies:
     - tedboard
 id: twittertimeline
 theme: tedboard
-region: content
-weight: 0
+region: bottom_content_right
+weight: -6
 provider: null
 plugin: twitter_embed_timeline
 settings:
@@ -17,7 +17,7 @@ settings:
   label: 'Latest Tweets'
   provider: twitter_embed
   label_display: visible
-  username: jhapdp
+  username: Srijan
   type: profile
   type_value: ''
   display_style: timeline
@@ -26,13 +26,13 @@ settings:
     noheader: noheader
     nofooter: nofooter
     noborders: noborders
-    noscrollbar: noscrollbar
     transparent: 0
+    noscrollbar: 0
   width: '0'
-  height: '600'
+  height: '500'
   link_color: '#2b7bb9'
   border_color: '#000000'
-  tweet_limit: '3'
+  tweet_limit: '0'
   show_replies: 0
   aria_polite: polite
   language: ''
