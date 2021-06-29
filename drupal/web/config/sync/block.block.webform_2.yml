@@ -5,6 +5,7 @@ dependencies:
   config:
     - webform.webform.contact_us
   module:
+    - system
     - webform
   theme:
     - tedboard
@@ -22,4 +23,8 @@ settings:
   webform_id: contact_us
   default_data: ''
   redirect: false
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

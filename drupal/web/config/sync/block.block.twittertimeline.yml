@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   module:
+    - system
     - twitter_embed
   theme:
     - tedboard
@@ -39,4 +40,8 @@ settings:
   hide_username: false
   hide_followers_count: false
   size: null
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
