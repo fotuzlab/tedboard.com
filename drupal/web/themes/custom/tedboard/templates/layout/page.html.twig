@@ -33,8 +33,19 @@
       </div>
     {% else %}
       <div class="{{ is_front ? 'container-fluid' : 'container' }}">
-            <div class=""> {{ page.highlighted }} </div>
-            <div class=""> {{ page.content }} </div>
+          <div> {{ page.highlighted }} </div>
+          <div> {{ page.content }} </div>
+      </div>
+      <div class="container">
+          {% if (page.bottom_content_left and page.bottom_content_right) %}
+            <div class="row">
+              <div class="col-md-6"> {{ page.bottom_content_left }} </div>
+              <div class="col-md-6"> {{ page.bottom_content_right }} </div>
+            </div>
+          {% else %}
+            {{ page.bottom_content_left }}
+            {{ page.bottom_content_right }}
+          {% endif %}
       </div>
     {% endif %}
   </div>

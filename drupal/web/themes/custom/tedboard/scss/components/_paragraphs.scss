@@ -27,13 +27,29 @@
   .link > div {
     display: flex;
 
+    div:nth-child(odd) {
+      a {
+        background-color: $royal-blue;
+        border-color: $royal-blue;
+        color: $white;
+      }
+    }
+    div:nth-child(even) {
+      a {
+        background-color: $white;
+        border: 2px solid $royal-blue;
+        color: $royal-blue;
+
+        &:hover, &:focus {
+          color: $white;
+        }
+      }
+    }
+
     div {
       padding-right: 20px;
 
       a {
-        background-color: #416ad9;
-        border-color: #416ad9;
-        color: #fff;
         padding: 0.7rem 1rem;
         border: 1px solid transparent;
         border-radius: 11px;
@@ -41,8 +57,8 @@
         text-transform: capitalize;
 
         &:hover, &:focus {
-          background-color: #2954cb;
-          border-color: #2750c1;
+          background-color: $hover-link;
+          border-color: $hover-link;
         }
         &:focus {
           box-shadow: 0 0 0 0.2rem rgb(71 147 231 / 50)

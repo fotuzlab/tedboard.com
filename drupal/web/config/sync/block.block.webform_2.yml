@@ -10,8 +10,8 @@ dependencies:
     - tedboard
 id: webform_2
 theme: tedboard
-region: content
-weight: 0
+region: bottom_content_left
+weight: -6
 provider: null
 plugin: webform_block
 settings:
