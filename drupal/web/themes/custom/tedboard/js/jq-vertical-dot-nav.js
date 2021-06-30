@@ -12,9 +12,9 @@
     attach: function (context, settings) {
       function changeDot() {
         const scrollValue = $(window).scrollTop();
-        const heightSec2 = $('#sec6').offset().top;
-        const heightSec3 = $('#sec7').offset().top;
-        const heightSec4 = $('#sec8').offset().top;
+        const heightSec2 = $('#sec5').offset().top;
+        const heightSec3 = $('#sec6').offset().top;
+        const heightSec4 = $('#sec7').offset().top;
       
         if (scrollValue < heightSec2) {
             $('.scrollSection nav li').not('.dot1').removeClass('active');
