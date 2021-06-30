@@ -168,6 +168,11 @@ div#block-twittertimeline h2 {
 .social-media-links--platforms li a.social-media-link-icon--facebook {
   padding: 0.3rem;
 }
+.social-media-links--platforms li:hover, .social-media-links--platforms li:focus {
+  background-color: #2750c1;
+  border-color: #2750c1;
+  color: #ffffff;
+}
 
 .paragraph {
   min-height: 100%;

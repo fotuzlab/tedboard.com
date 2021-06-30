@@ -25,20 +25,10 @@
 
 div#block-webform-2,
 div#block-twittertimeline {
-  // background: #6C7586;
-  // padding: 40px;
-  // margin: 40px 0;
-
   h2 {
     text-align: center;
     margin-bottom: 40px;
   }
-
-  // iframe {
-  //   width: 48% !important;
-  //   margin: 0 auto!important;
-  //   display: flex!important;
-  // }
 }
 
 .social-media-links--platforms {
@@ -53,5 +43,10 @@ div#block-twittertimeline {
          padding: 0.3rem;
        }
      }
+    &:hover, &:focus {
+      background-color: $hover-link;
+      border-color: $hover-link;
+      color: $white;
+    }
   }
 }
